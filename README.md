@@ -10,4 +10,4 @@ I am using fedora with XFCE sometimes gnome
 Sometimes I use Arch/Endevour with BSPWM or manjaro with gnome
 
 ```
-![Screenshot](https://raw.githubusercontent.com/zer0as/dotfiles/main/screenshot.png "Don't hover over me")
+![Screenshot](https://raw.githubusercontent.com/zer0as/dotflies/main/screenshot.png)
