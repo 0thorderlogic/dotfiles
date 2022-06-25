@@ -1,0 +1,6 @@
+[user]
+	name = Aryan Singh
+	email = zer0as@protonmail.com
+[core]
+	autocrlf = input
+	editor = code --wait
