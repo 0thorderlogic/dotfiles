@@ -1,0 +1,117 @@
+schemes:
+  # Tokyo Night theme, based on both:
+  #   https://github.com/ghifarit53/tokyonight-vim
+  #   https://github.com/enkia/tokyo-night-vscode-theme
+  tokyo-night: &tokyo-night
+    # Default colors
+    primary:
+      background: '0x1a1b26'
+      foreground: '0xa9b1d6'
+
+    # Normal colors
+    normal:
+      black:   '0x32344a'
+      red:     '0xf7768e'
+      green:   '0x9ece6a'
+      yellow:  '0xe0af68'
+      blue:    '0x7aa2f7'
+      magenta: '0xad8ee6'
+      cyan:    '0x449dab'
+      white:   '0x787c99'
+
+    # Bright colors
+    bright:
+      black:   '0x444b6a'
+      red:     '0xff7a93'
+      green:   '0xb9f27c'
+      yellow:  '0xff9e64'
+      blue:    '0x7da6ff'
+      magenta: '0xbb9af7'
+      cyan:    '0x0db9d7'
+      white:   '0xacb0d0'
+
+  tokyo-night-storm: &tokyo-night-storm
+    # Default colors
+    primary:
+      background: '0x24283b'
+      foreground: '0xa9b1d6'
+
+    # Normal colors
+    normal:
+      black:   '0x32344a'
+      red:     '0xf7768e'
+      green:   '0x9ece6a'
+      yellow:  '0xe0af68'
+      blue:    '0x7aa2f7'
+      magenta: '0xad8ee6'
+      cyan:    '0x449dab'
+      white:   '0x9699a8'
+
+    # Bright colors
+    bright:
+      black:   '0x444b6a'
+      red:     '0xff7a93'
+      green:   '0xb9f27c'
+      yellow:  '0xff9e64'
+      blue:    '0x7da6ff'
+      magenta: '0xbb9af7'
+      cyan:    '0x0db9d7'
+      white:   '0xacb0d0'
+
+# normal dark theme
+colors: *tokyo-night
+
+# OR:
+
+# "storm" uses a lighter BG color
+colors: *tokyo-night-storm
+
+font:
+  # The normal (roman) font face to use.
+  # Style can be specified to pick a specific face.
+  normal:
+    family: Cascadia Mono
+    style: Light
+    # family: "Fira Code"
+    # family: "Source Code Pro"
+    # style: Retina
+
+  # The bold font face
+  bold:
+    family: Cascadia Mono
+    style: Medium
+    # family: "Fira Code"
+    # family: "Source Code Pro"
+
+  # The italic font face
+  italic:
+    family: Cascadia Mono
+    style: "Light Italic"
+    # style: "Light Oblique"
+    # family: "Fira Code"
+    # family: "Source Code Pro"
+    # style: "Medium Italic"
+
+  # Point size of the font
+  size: 16.0
+
+# ----------------------------------------------- #
+# u/WillBikeForBeer on reddit
+# https://www.reddit.com/r/Fedora/comments/r9eirf/use_gtk_theme_in_alacritty/
+
+# You’re running on Wayland. The problem is that Gnome requires all Wayland apps to draw their own window decorations, and what you’re seeing is Alacritty’s homebrew attempt at a title bar. Alacritty does this for performance reasons - if it draws its own decorations, then it doesn’t have to rely on pulling in GTK or another widget library to draw them and likely slowing it down.
+
+# The fix is to run Alacritty using an Xwayland instance. From your gnome terminal, run the command:
+
+# env -u WAYLAND_DISPLAY alacritty
+
+# If this works, you’re now running alacritty using Xorg instead of Wayland. You may encounter some weirdness such as clipboard cut-and-paste failures - Xwayland had issues with this in the past and I don’t know if they’ve been ironed out yet (or if that’s even possible).
+
+# If you don’t want to run alacritty using Xwayland, then unfortunately you’ll need to live with mismatched title bars or choose another terminal.
+# env -u WAYLAND_DISPLAY alacritty
+# ----------------------------------------------- #
+
+# Cursor style
+cursor:
+style: underline
+
