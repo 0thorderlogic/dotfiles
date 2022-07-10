@@ -1,6 +1,14 @@
 [user]
 	name = Aryan Singh
-	email = zer0as@protonmail.com
+	email = aoneone5@protonmail.com
 [core]
 	autocrlf = input
 	editor = code --wait
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[cola]
+	spellcheck = false

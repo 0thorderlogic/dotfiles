@@ -1,9 +1,11 @@
+![vim](https://raw.githubusercontent.com/aoneone5/dotflies/main/vim.png)
+
 ```
-zer0as's dotfiles 
+aoneone5's dotfiles 
 
 the configs come from another repo 
 added here as a submodule check 
-zer0as/config 
+aoneone5/config 
 
 I am currently using fedora with gnome
 
@@ -13,15 +15,15 @@ or fedora with XFCE
 ```
 ### Wallpaper
 
-![Wallpaper](https://raw.githubusercontent.com/zer0as/dotflies/main/wallpaper.png)
+![Wallpaper](https://raw.githubusercontent.com/aoneone5/dotflies/main/wallpapers/gruvbox.png)
 
 ### Gnome
-![Gnome setup](https://zer0as.github.io/static/images/workspace-setups/gnome.png)
+![Gnome setup](https://aoneone5.github.io/static/images/workspace-setups/gnome.png)
 
 ### bspwm
 
-![BSPWM setup](https://zer0as.github.io/static/images/workspace-setups/bspwm.png)
+![BSPWM setup](https://aoneone5.github.io/static/images/workspace-setups/bspwm.png)
 
 ### XFCE
 
-![XFCE setup](https://zer0as.github.io/static/images/workspace-setups/xfce.png)
+![XFCE setup](https://aoneone5.github.io/static/images/workspace-setups/xfce.png)

@@ -48,7 +48,7 @@ int main (int argc, char *argv[]) {
         vs_code_install = vscode();
 
         if (vs_code_install)
-            system("curl --proto '=https' --tlsv1.2 -sSf https://gist.githubusercontent.com/zer0as/14e9a77f0e87ff0c8951e65705855b2a/raw/91cbb5ec01340d6cb1ad82a551a83d1fc241f62e/installvscode.sh | sh"); 
+            system("curl --proto '=https' --tlsv1.2 -sSf https://gist.githubusercontent.com/aoneone5/14e9a77f0e87ff0c8951e65705855b2a/raw/91cbb5ec01340d6cb1ad82a551a83d1fc241f62e/installvscode.sh | sh"); 
         else
             printf("Okay! if you change your mind, go suck an egg\n");
     }
@@ -70,7 +70,10 @@ int main (int argc, char *argv[]) {
 
     flatpak(answer);
 
-
+	printf("Installing vim plugs: ");
+	printf("FOR VIM");
+	
+	system("bash install-vim-plug.sh");
 
     return 0;
 }
