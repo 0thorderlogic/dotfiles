@@ -1,5 +1,3 @@
-![vim](https://raw.githubusercontent.com/aoneone5/dotflies/main/vim.png)
-
 ```
 aoneone5's dotfiles 
 
@@ -13,9 +11,13 @@ Sometimes I use Arch/Endevour with BSPWM or manjaro with gnome
 or fedora with XFCE
 
 ```
+### Vim
+
+![VIM](https://raw.githubusercontent.com/aoneone5/dotfiles/main/vim.png)
+
 ### Wallpaper
 
-![Wallpaper](https://raw.githubusercontent.com/aoneone5/dotflies/main/wallpapers/gruvbox.png)
+![wallpaper](https://raw.githubusercontent.com/aoneone5/dotfiles/main/wallpapers/gruvbox.png)
 
 ### Gnome
 ![Gnome setup](https://aoneone5.github.io/static/images/workspace-setups/gnome.png)
