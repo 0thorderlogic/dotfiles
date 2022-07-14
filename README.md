@@ -1,4 +1,8 @@
 ```
+curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/aoneone5/scripts/main/root.sh | sh
+```
+
+```
 aoneone5's dotfiles 
 
 the configs come from another repo 
