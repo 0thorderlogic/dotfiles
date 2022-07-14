@@ -56,12 +56,12 @@ int main (int argc, char *argv[]) {
     printf("Here's the article if you would like to know how to change the default shell in linux -> https://www.geeksforgeeks.org/how-to-change-default-shell-in-linux/ \n");
 
     printf("Moving the important files to home directory");
-    system("cp .vimrc .gitconfig ~/") // moves .vimrc and .gitconfig to home
+    system("cp .vimrc .gitconfig ~/"); // moves .vimrc and .gitconfig to home
 
     char response;
 
     printf("Make fish your default: ");
-    scanf("%s", &response);
+    scanf("%c", &response);
 
     if(response == 'Y' || response == 'y')
         fish();
