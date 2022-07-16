@@ -22,9 +22,8 @@
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'gruvbox-community/gruvbox'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes' 
+Plug 'folke/tokyonight.nvim'
+Plug 'itchyny/lightline.vim'
 Plug 'vim-scripts/AutoComplPop'
 
 call plug#end()
@@ -33,7 +32,7 @@ call plug#end()
 
 " COLORS ----------------------------------------------------------------- {{{
 
-colorscheme gruvbox
+colorscheme tokyonight 
 
 " }}}
 
@@ -156,13 +155,20 @@ let g:airline_symbols = {}
 endif
 
 " powerline symbols
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_section_b = '%{strftime("%H:%M")}'
-let g:airline#extensions#hunks#enabled=0
-let g:airline_theme = 'gruvbox'
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
+""let g:lightline = {
+""	'colorscheme': 'tokyonight'}
+
 
 " Always show tab
 " set showtabline=2 // don't like it much
